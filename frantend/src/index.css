@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&family=Prata&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a.active hr {
+    display: block;
+}
+
+* {
+    font-family: 'Outfit', sans-serif;
+}
+
+.prata-regular {
+    font-family: "Prata", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+a.active {
+    /* Optional: Define a default active state */
+    background: #222; 
+    color: white;
+}
+
+@media (min-width: 640px) {
+    a.active {
+        background: #000;
+    }
+}
